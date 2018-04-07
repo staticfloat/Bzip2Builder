@@ -29,7 +29,7 @@ deploy:
   api_key:
     # Note; this api_key is only valid for staticfloat/Bzip2Builder; you need
     # to make your own: https://docs.travis-ci.com/user/deployment/releases/
-    secure: 
+    secure: sYGFcSV2GJS9ZtlEe0bcqYq/KR3e34eT4osZ817JrIpXTVJFjVr/YXGntdorWRv/QcMsb20m9f/j3ZZw6EGk5ZR8vW/l2jE+dYidSUPn6N1LmCotspLqc3Yksr9KEitPSTUqMNPN2HEU5ImRiqUL1MUkrKNYoktXF18JHq1wkRq7mR+so25OKnL82nV+lWYssFUIYK0cFJL2whn6w09+PBjR4P8kjI1fXgo5WI1VHX5az+xEpGHeft+CfnhQBpfrxsnFV8AoODDcPRcMmNz7ZiEghtxD6/B9f06/Bmk/ne9ozlQKlTYf5hyteZi8EEhxWBUuWZDxlPdAPeWZj1ebzhXFaxlipHoP8rM3+9OUvK/bZ38j7bBnez4CaV4Da6DQCrgvuC0q8ETY19+HjOr3nM7QWDR36hJEBqSnA6g4wpNFo8S3YCSu1pFGbqqQwjLlnRDNE1WrGUTmX+XvAHfXa5afjGOaXaJIfJisxTBOzwgifUChr03ZbfCizHBQOiqwP9u8gxVeTiWDuIi1LUYIgymOnhX6JMGlIheHbHuMwCqUI/4m1YUF3y0lEYOe8VQjYGFF10l+Eq7VslJmfVjK9j2x+H4UAdETgT+B3pJsoE6+5f7zyiJB3lIxTP2nTYE+KCsuG+pZdFt8sb6o7OnixTdpB0mtylzBpUulmrv3mp0=
   file_glob: true
   file: products/*
   skip_cleanup: true
