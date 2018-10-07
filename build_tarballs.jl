@@ -24,17 +24,17 @@ make CC="${CC}" AR="${AR}" RANLIB="${RANLIB}" CFLAGS="${CFLAGS}" LDFLAGS="${LDFL
 
 # Build dynamic library
 if [[ "${target}" == *-darwin* ]]; then
-    $CC -shared -o libbz2.1.0.6.dylib $OBJS
+    $CC -shared -o libbz2.1.0.6.dylib $LDFLAGS $OBJS
     ln -s libbz2.1.0.6.dylib libbz2.1.0.dylib
     ln -s libbz2.1.0.6.dylib libbz2.1.dylib
     ln -s libbz2.1.0.6.dylib libbz2.dylib
     mv libbz2*.dylib ${prefix}/lib/
 elif [[ "${target}" == *-mingw* ]]; then
-    $CC -shared -o libbz2-1.dll $OBJS
+    $CC -shared -o libbz2-1.dll $LDFLAGS $OBJS
     ln -s libbz2-1.dll libbz2.dll
     mv libbz2*.dll ${prefix}/bin/
 else
-    $CC -shared -Wl,-soname -Wl,libbz2.so.1.0 -o libbz2.so.1.0.6
+    $CC -shared -Wl,-soname -Wl,libbz2.so.1.0 -o libbz2.so.1.0.6 $LDFLAGS $OBJS
     ln -s libbz2.so.1.0.6 libbz2.so.1.0
     ln -s libbz2.so.1.0.6 libbz2.so.1
     ln -s libbz2.so.1.0.6 libbz2.so
