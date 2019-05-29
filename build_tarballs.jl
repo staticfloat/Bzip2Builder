@@ -48,6 +48,7 @@ platforms = supported_platforms()
 
 # The products that we will ensure are always built
 products = prefix -> [
+    ExecutableProduct(prefix,"bzip2", :bzip2),
     LibraryProduct(prefix,"libbz2", :libbzip2),
 ]
 
