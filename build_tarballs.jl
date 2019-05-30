@@ -44,7 +44,7 @@ fi
 # Add pkg-config file
 mkdir -p ${prefix}/lib/pkgconfig
 cat << EOF > $prefix/lib/pkgconfig/bzip2.pc
-prefix=/workspace/destdir
+prefix=${prefix}
 exec_prefix=\${prefix}
 libdir=\${exec_prefix}/lib
 sharedlibdir=\${libdir}
